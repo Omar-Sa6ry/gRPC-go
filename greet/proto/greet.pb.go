@@ -118,11 +118,12 @@ const file_greet_proto_rawDesc = "" +
 	"\n" +
 	"first_name\x18\x01 \x01(\tR\tfirstName\"'\n" +
 	"\rGreetResponse\x12\x16\n" +
-	"\x06result\x18\x01 \x01(\tR\x06result2\xc1\x01\n" +
+	"\x06result\x18\x01 \x01(\tR\x06result2\x83\x02\n" +
 	"\fGreetService\x124\n" +
 	"\x05Greet\x12\x13.greet.GreetRequest\x1a\x14.greet.GreetResponse\"\x00\x12?\n" +
 	"\x0eGreetManyTimes\x12\x13.greet.GreetRequest\x1a\x14.greet.GreetResponse\"\x000\x01\x12:\n" +
-	"\tLongGreet\x12\x13.greet.GreetRequest\x1a\x14.greet.GreetResponse\"\x00(\x01B+Z)github.com/Omar-Sa6ry/grpc-go/greet/protob\x06proto3"
+	"\tLongGreet\x12\x13.greet.GreetRequest\x1a\x14.greet.GreetResponse\"\x00(\x01\x12@\n" +
+	"\rGreetEveryone\x12\x13.greet.GreetRequest\x1a\x14.greet.GreetResponse\"\x00(\x010\x01B+Z)github.com/Omar-Sa6ry/grpc-go/greet/protob\x06proto3"
 
 var (
 	file_greet_proto_rawDescOnce sync.Once
@@ -145,11 +146,13 @@ var file_greet_proto_depIdxs = []int32{
 	0, // 0: greet.GreetService.Greet:input_type -> greet.GreetRequest
 	0, // 1: greet.GreetService.GreetManyTimes:input_type -> greet.GreetRequest
 	0, // 2: greet.GreetService.LongGreet:input_type -> greet.GreetRequest
-	1, // 3: greet.GreetService.Greet:output_type -> greet.GreetResponse
-	1, // 4: greet.GreetService.GreetManyTimes:output_type -> greet.GreetResponse
-	1, // 5: greet.GreetService.LongGreet:output_type -> greet.GreetResponse
-	3, // [3:6] is the sub-list for method output_type
-	0, // [0:3] is the sub-list for method input_type
+	0, // 3: greet.GreetService.GreetEveryone:input_type -> greet.GreetRequest
+	1, // 4: greet.GreetService.Greet:output_type -> greet.GreetResponse
+	1, // 5: greet.GreetService.GreetManyTimes:output_type -> greet.GreetResponse
+	1, // 6: greet.GreetService.LongGreet:output_type -> greet.GreetResponse
+	1, // 7: greet.GreetService.GreetEveryone:output_type -> greet.GreetResponse
+	4, // [4:8] is the sub-list for method output_type
+	0, // [0:4] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
