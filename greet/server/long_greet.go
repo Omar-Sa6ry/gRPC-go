@@ -2,6 +2,7 @@ package main
 
 import(
 	"fmt"
+	"io"
 	"log"
 
 	pb "github.com/Omar-Sa6ry/grpc-go/greet/proto"
@@ -24,6 +25,7 @@ func (s *Server) LongGreet(stream pb.GreetService_LongGreetServer) error {
 			log.Fatalf("Error while reading stream: %v", err)
 		}
 
+		log.Printf("Receiving: %v", req)
 		res+=fmt.Sprintf("Hello %s\n",req.FirstName)
 	}
 
