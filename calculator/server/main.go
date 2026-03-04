@@ -7,6 +7,7 @@ import (
 	pb "github.com/Omar-Sa6ry/grpc-go/calculator/proto"
 
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 )
 
 var addr string = "localhost:50051"
@@ -23,6 +24,8 @@ func main() {
 
 	grpcServer := grpc.NewServer()
 	pb.RegisterCalculatorServiceServer(grpcServer, &Server{})
+
+	reflection.Register(grpcServer)
 
 	log.Printf("Listening on %s\n", addr)
 	if err = grpcServer.Serve(conn); err != nil {
