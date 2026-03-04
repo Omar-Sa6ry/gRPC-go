@@ -14,9 +14,9 @@ type BlogItem struct {
 
 func documentToBlog (data *BlogItem) *pb.Blog {
 	return &pb.Blog{
-		id: data.ID.Hex(),
-		author_id: data.AuthorID,
-		title: data.Title,
-		content: data.Content,
+		Id: data.ID.Hex(),
+		AuthorId: data.AuthorID,
+		Title: data.Title,
+		Content: data.Content,
 	}
 }
