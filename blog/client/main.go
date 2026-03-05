@@ -24,5 +24,6 @@ func main() {
 	readBlog(client, id)
 	// readBlog(client, "ifg")
 	updateBlog(client, id)
+	listBlogs(client)
 
 }
