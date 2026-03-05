@@ -25,5 +25,5 @@ func main() {
 	// readBlog(client, "ifg")
 	updateBlog(client, id)
 	listBlogs(client)
-
+	deleteBlog(client, id)
 }
